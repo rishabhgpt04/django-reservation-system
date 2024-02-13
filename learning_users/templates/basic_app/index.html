@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% block body_block %}
+<div class="jumbotron">
+    {% if user.is_authenticated %}
+    <h1>
+        Hi!! Welcome {{user.username}} To Our Reservation System
+    </h1>
+    {% else %}
+    <h1>
+        Welcome 
+    </h1>
+    {% endif %}
+</div>
+{% endblock %}
